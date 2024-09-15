@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "groupname": {
+      "type": "string"
+    },
+    "mappedSports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rampId": {
+            "type": "string"
+          },
+          "sportexId": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "rampId",
+          "sportexId",
+          "category"
+        ]
+      }
+    }
+  },
+  "required": [
+    "groupname",
+    "mappedSports"
+  ]
+}
