@@ -1,6 +1,6 @@
 {{- range $group := . }}
 group:  
-  - groupname: {{ $group.groupname }}
+  - groupname: {{ .groupname }}
     mappdSports:
     {{- range .targets }}
     - rampId: {{ .rampId }}
