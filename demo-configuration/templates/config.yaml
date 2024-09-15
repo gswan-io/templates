@@ -1,7 +1,10 @@
-groupname: {{ .groupname }}
-mappdSports:
-  {{- range $v := .Values.mappedSports }}
-  - rampId: {{ $v.name }}
-    sportexId: {{ $v.name }}
-    category: {{ $v.name }}
-  {{- end }}
+{{- range $g := .Values.groups }}
+group:  
+  - groupname: {{ $g.groupname }}
+    mappdSports:
+      {{- range $v := $g.mappedSports }}
+      - rampId: {{ $v.name }}
+        sportexId: {{ $v.name }}
+        category: {{ $v.name }}
+      {{- end }}
+{{- end }}

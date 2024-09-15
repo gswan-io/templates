@@ -1,2 +1,3 @@
-groupname: ""
-mappedSports: null
+groups:
+  groupname: ""
+  mappedSports: null

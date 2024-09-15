@@ -1,33 +1,44 @@
 {
   "properties": {
-    "groupname": {
-      "type": "string"
-    },
-    "mappedSports": {
+    "group": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "rampId": {
+          "groupname": {
             "type": "string"
           },
-          "sportexId": {
-            "type": "string"
-          },
-          "category": {
-            "type": "string"
+          "mappedSports": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "rampId": {
+                  "type": "string"
+                },
+                "sportexId": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "rampId",
+                "sportexId",
+                "category"
+              ]
+            }
           }
         },
         "required": [
-          "rampId",
-          "sportexId",
-          "category"
+          "groupname",
+          "mappedSports"
         ]
       }
     }
   },
   "required": [
-    "groupname",
-    "mappedSports"
+    "group"
   ]
 }
