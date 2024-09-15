@@ -2,6 +2,8 @@
   "properties": {
     "group": {
       "type": "array",
+      "title": "Groups",
+      "description": "List of Group configurations",
       "items": {
         "type": "object",
         "properties": {
