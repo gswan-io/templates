@@ -1,49 +1,53 @@
 {
-  "properties": {
-    "group": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "groupname": {
-            "type": "string",
-            "title": "Group Name"
-          },
-          "mappedSports": {
-            "type": "array",
-            "title": "Mapped Sports",
-            "items": {
-              "type": "object",
-              "properties": {
-                "category": {
-                  "type": "string",
-                  "title": "Category"
+  "groups": {
+    "title": "Groups",
+    "type": "object",
+    "properties": {
+      "group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "groupname": {
+              "type": "string",
+              "title": "Group Name"
+            },
+            "mappedSports": {
+              "type": "array",
+              "title": "Mapped Sports",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "category": {
+                    "type": "string",
+                    "title": "Category"
+                  },
+                  "rampId": {
+                    "type": "string",
+                    "title": "Ramp ID"
+                  },
+                  "sportexId": {
+                    "type": "string",
+                    "title": "Sportex ID"
+                  }
                 },
-                "rampId": {
-                  "type": "string",
-                  "title": "Ramp ID"
-                },
-                "sportexId": {
-                  "type": "string",
-                  "title": "Sportex ID"
-                }
-              },
-              "required": [
-                "category",
-                "rampId",
-                "sportexId"
-              ]
+                "required": [
+                  "category",
+                  "rampId",
+                  "sportexId"
+                ]
+              }
             }
-          }
-        },
-        "required": [
-          "groupname",
-          "mappedSports"
-        ]
+          },
+          "required": [
+            "groupname",
+            "mappedSports"
+          ]
+        }
       }
-    }
-  },
-  "required": [
-    "group"
-  ]
+    },
+    "required": [
+      "group"
+    ]
+  }
 }
