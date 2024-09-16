@@ -1,4 +1,4 @@
-{{- range $group := .Values.groups }}
+{{- range $group := .Values.groups.group }}
 group:  
   - groupname: {{ $group.groupname }}
     mappdSports:
