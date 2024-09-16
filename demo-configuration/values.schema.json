@@ -2,6 +2,7 @@
   "properties": {
     "group": {
       "type": "array",
+      "title": "Groups",
       "items": {
         "type": "object",
         "properties": {
