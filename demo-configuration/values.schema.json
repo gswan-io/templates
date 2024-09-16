@@ -10,23 +10,27 @@
           },
           "mappedSports": {
             "type": "array",
+            "title": "Mapped Sports",
             "items": {
               "type": "object",
               "properties": {
+                "category": {
+                  "type": "string",
+                  "title": "Category"
+                },
                 "rampId": {
-                  "type": "string"
+                  "type": "string",
+                  "title": "Ramp ID"
                 },
                 "sportexId": {
-                  "type": "string"
-                },
-                "category": {
-                  "type": "string"
+                  "type": "string",
+                  "title": "Sportex ID"
                 }
               },
               "required": [
+                "category",
                 "rampId",
-                "sportexId",
-                "category"
+                "sportexId"
               ]
             }
           }
